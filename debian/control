@@ -1,0 +1,20 @@
+## This file is part of Whonix.
+## Copyright (C) 2012 - 2014 Patrick Schleizer <adrelanos@riseup.net>
+## See the file COPYING for copying conditions.
+
+Source: apparmor-profile-virtualbox
+Section: misc
+Priority: optional
+Maintainer: Patrick Schleizer <adrelanos@riseup.net>
+Build-Depends: debhelper (>= 8), dh-apparmor, faketime, rsync, git
+Homepage: https://www.whonix.org/wiki/AppArmor
+Vcs-Browser: https://github.com/Whonix/apparmor-profile-virtualbox
+Vcs-Git: https://github.com/Whonix/apparmor-profile-virtualbox.git
+Standards-Version: 3.9.4
+
+Package: apparmor-profile-virtualbox
+Architecture: all
+Depends: ${misc:Depends}, apparmor
+Description: AppArmor profile for virtualbox.
+ An AppArmor profile to confine VirtualBox. This profile is
+ developed by the Whonix team. VirtualBox is developed by Oracle.
